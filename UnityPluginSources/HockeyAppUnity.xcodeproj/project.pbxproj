@@ -23,7 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		1B24D8B61BF4144B009A4F91 /* libHockeySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B24D8B51BF4144B009A4F91 /* libHockeySDK.a */; };
-		1BC1D0621952EBB1006E61BD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1D0611952EBB1006E61BD /* Utils.m */; };
+		1BC1D0621952EBB1006E61BD /* HockeyAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1D0611952EBB1006E61BD /* HockeyAppUtils.m */; };
 		1BC5D65218D71C66008CB6F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC5D65118D71C66008CB6F8 /* Foundation.framework */; };
 		1BC5D65718D71C66008CB6F8 /* HockeyAppUnity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BC5D65618D71C66008CB6F8 /* HockeyAppUnity.h */; };
 		1BC5D65918D71C66008CB6F8 /* HockeyAppUnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5D65818D71C66008CB6F8 /* HockeyAppUnity.m */; };
@@ -89,8 +89,8 @@
 		1B24D8B31BF4142B009A4F91 /* HockeySDKFeatureConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HockeySDKFeatureConfig.h; sourceTree = "<group>"; };
 		1B24D8B41BF4142B009A4F91 /* HockeySDKNullability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HockeySDKNullability.h; sourceTree = "<group>"; };
 		1B24D8B51BF4144B009A4F91 /* libHockeySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHockeySDK.a; sourceTree = "<group>"; };
-		1BC1D0601952EBB1006E61BD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
-		1BC1D0611952EBB1006E61BD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		1BC1D0601952EBB1006E61BD /* HockeyAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HockeyAppUtils.h; sourceTree = "<group>"; };
+		1BC1D0611952EBB1006E61BD /* HockeyAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HockeyAppUtils.m; sourceTree = "<group>"; };
 		1BC5D64E18D71C66008CB6F8 /* libHockeyAppUnity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHockeyAppUnity.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC5D65118D71C66008CB6F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1BC5D65518D71C66008CB6F8 /* HockeyAppUnity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HockeyAppUnity-Prefix.pch"; sourceTree = "<group>"; };
@@ -204,8 +204,8 @@
 				1BC5D65618D71C66008CB6F8 /* HockeyAppUnity.h */,
 				1BC5D65818D71C66008CB6F8 /* HockeyAppUnity.m */,
 				1BC5D65418D71C66008CB6F8 /* Supporting Files */,
-				1BC1D0601952EBB1006E61BD /* Utils.h */,
-				1BC1D0611952EBB1006E61BD /* Utils.m */,
+				1BC1D0601952EBB1006E61BD /* HockeyAppUtils.h */,
+				1BC1D0611952EBB1006E61BD /* HockeyAppUtils.m */,
 			);
 			path = HockeyAppUnity;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC5D65918D71C66008CB6F8 /* HockeyAppUnity.m in Sources */,
-				1BC1D0621952EBB1006E61BD /* Utils.m in Sources */,
+				1BC1D0621952EBB1006E61BD /* HockeyAppUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

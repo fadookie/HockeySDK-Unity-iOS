@@ -1,6 +1,6 @@
-#import "Utils.h"
+#import "HockeyAppUtils.h"
 
-@implementation Utils
+@implementation HockeyAppUtils
 
 + (BITAuthenticatorIdentificationType)identificationTypeForString:(NSString *)typeString{
   

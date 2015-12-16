@@ -1,5 +1,5 @@
 #import "HockeyAppUnity.h"
-#import "Utils.h"
+#import "HockeyAppUtils.h"
 
 @interface HockeyAppUnity()
 
@@ -63,7 +63,7 @@
 
 + (void)configCrashManagerWithAutoSendEnabled:(BOOL)autoSendEnabled{
   
-    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:[Utils statusForAutoSendEnabled:autoSendEnabled]];
+    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:[HockeyAppUtils statusForAutoSendEnabled:autoSendEnabled]];
 }
 
 + (void)configUpdateManagerWithUpdateManagerEnabled:(BOOL)updateManagerEnabled{
@@ -74,7 +74,7 @@
 + (void)configAuthentificatorWithIdentificationType:(NSString *)identificationType secret:(NSString *)secret{
   
   if(secret && secret.length > 0){
-    [[BITHockeyManager sharedHockeyManager].authenticator setIdentificationType:[Utils identificationTypeForString:identificationType]];
+    [[BITHockeyManager sharedHockeyManager].authenticator setIdentificationType:[HockeyAppUtils identificationTypeForString:identificationType]];
     [[BITHockeyManager sharedHockeyManager].authenticator setAuthenticationSecret:secret];
   }
 }
